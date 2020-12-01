@@ -1,0 +1,308 @@
+
+/* =============== BASE CSS ================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400&display=swap');
+html, body {
+  width: 100%;
+  height: 100%;
+}
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+h2,p{margin: 0;}
+a:hover{
+  text-decoration: none;
+  display: inline-block;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+/* ========================================== */
+/* NAV BAR STYLE  */
+/* ========================================== */
+.main-nav{
+  background-color: #292f6b;
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+}
+.menu{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.menu li a{
+  padding: 10px 20px;
+  color: #fff;
+  display: block;
+}
+.menu li a:hover{
+  color: rgb(0, 192, 144);
+}
+.logo-text a{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+
+/*--------- Toggler ------- */
+.menu-toggle{
+  width: 36px;
+  height: 30px;
+  border: 1px solid #fff;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-left: auto;
+  margin-top: 10px;
+}
+
+.menu-toggle span{
+  width: calc(100%  - 6px);
+  height: 2px;
+  background-color: #fff;
+  margin: 3px;
+}
+.menu-toggle:hover{
+  border-color: rgb(0, 192, 144);
+}
+.menu-toggle:hover span{
+  background-color: rgb(0, 192, 144);
+}
+
+
+
+
+/* ========================================== */
+/* HERO AREA STYLE  */
+/* ========================================== */
+.hero-area {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+}
+.hero-area .left-side {
+  width: 60%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  align-items: center;
+}
+.hero-area .left-side:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 200%;
+  background-color: #292f6b;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transform: rotate(6deg);
+  margin-left: -15%;
+  top: -5%;
+}
+.left-side-info .title {
+  font-weight: bold;
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+.left-side-info p {
+  margin-bottom: 15px;
+  font-size: 30px;
+  /* color: #ffd99f; */
+  color: rgb(0, 192, 144);
+  font-weight: 600;
+}
+.left-side-info .title{
+  color: #fff;
+}
+.left-side-info .title{
+  font-size: 50px;
+  font-weight: 600;
+}
+.left-side-info  .subtitle{
+  font-size: 35px;
+  font-style: italic;
+  color: #fff;
+}
+.left-side-info .subtitle {
+  margin-bottom: 15%;
+}
+.left-side-info {
+  width: 90%;
+  width: calc(100% - 120px);
+  margin-left: 5%;
+}
+
+
+/* -- register button-- */
+.btn-register {
+  border: none;
+  cursor: pointer;
+  line-height: 1.5;
+  font: 700 1.2rem "Roboto Slab", sans-serif;
+  padding: 1em 2em;
+  letter-spacing: 0.05rem;
+  display: inline-block;
+  background-color: #454fb5;
+  margin-bottom: 15px;
+  font-size: 30px;
+}
+.draw-border {
+  box-shadow: inset 0 0 0 2px #58afd1;
+  color: #fff;
+  transition: color 0.25s 0.0833333333s;
+  position: relative;
+}
+.draw-border::before, .draw-border::after {
+  border: 0 solid transparent;
+  box-sizing: border-box;
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  right: 0;
+}
+.draw-border::before {
+  border-bottom-width: 2px;
+  border-left-width: 2px;
+}
+.draw-border::after {
+  border-top-width: 2px;
+  border-right-width: 2px;
+}
+.btn-register:hover {
+  background-color: #118d70;
+}
+.draw-border:hover {
+  color: #fff;
+}
+.draw-border:hover::before, .draw-border:hover::after {
+  /* border-color: #58afd1; */
+  border-color: rgb(0, 192, 144);
+  transition: border-color 0s, width 0.25s, height 0.25s;
+  width: 100%;
+  height: 100%;
+}
+.draw-border:hover::before {
+  transition-delay: 0s, 0s, 0.25s;
+}
+.draw-border:hover::after {
+  transition-delay: 0s, 0.25s, 0s;
+}
+
+
+
+/* --------- Right Side Image ------ */
+.right-side{
+  background-image: url('../img/3.jpg');
+  width: 60%;
+  background-size: cover;
+  background-position: center;
+  margin-left: -10%;
+  position: relative;
+  z-index: -2;
+}
+
+.google-map-area iframe{
+  width: 100%;
+  height: 400px;
+  margin-bottom: -5px;
+}
+
+
+
+/* -------- Image gallery ------ */
+.gallery-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.gallery-wrapper .item {
+  width: calc(33% - 20px);
+  border: 1px solid #ddd;
+  padding: 2px;
+  margin: 5px;
+  width: 32%;
+  width: calc(33% - 20px);
+}
+.gallery-wrapper .item img {
+  width: 100%;
+  height: 100%;
+  transition: .2s;
+}
+.gallery-wrapper .item {
+  position: relative;
+  overflow: hidden;
+}
+.gallery-wrapper .item:hover img{
+  transform: scale(1.1);
+}
+.gallery-wrapper .item::hover::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #ddd;
+  opacity: .3;
+  transition: .2s;
+}
+.section-title {
+  text-align: center;
+  margin: 15px 0px;
+}
+
+.section-title h2 {
+  font-weight: 600;
+  font-size: 35px;
+}
+
+.section-title p {
+  font-size: 16px;
+  color: #555;
+}
+
+
+
+
+.footer-area {
+  background-color: #292f6b;
+}
+.footer-area p {
+  text-align: center;
+  color: #ccc;
+  font-size: 14px;
+  padding: 12px 0px;
+}
+.google-map-area{
+  border: 1px solid #292f6b;
+  padding: 1px 0px;
+}
+
+
+/*
+ffd99f
+theme color: #292f6b
+*/
+
