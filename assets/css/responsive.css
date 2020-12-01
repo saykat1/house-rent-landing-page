@@ -162,6 +162,9 @@
     width: 48%;
     width: calc(50% - 10px);
   }
+  .manager-image {
+    width: 40%;
+  }
 }
 
 

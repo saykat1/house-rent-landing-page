@@ -129,6 +129,9 @@ html {
   color: rgb(0, 192, 144);
   font-weight: 600;
 }
+.caption.second{
+  font-size: 20px;
+}
 .left-side-info .title{
   color: #fff;
 }
@@ -160,11 +163,13 @@ html {
   padding: 1em 2em;
   letter-spacing: 0.05rem;
   display: inline-block;
-  background-color: #454fb5;
+  /* background-color: #454fb5; */
+  background-color: #e91853;
   margin-bottom: 15px;
   font-size: 30px;
 }
 .draw-border {
+  /* box-shadow: inset 0 0 0 2px #58afd1; */
   box-shadow: inset 0 0 0 2px #58afd1;
   color: #fff;
   transition: color 0.25s 0.0833333333s;
@@ -190,14 +195,14 @@ html {
   border-right-width: 2px;
 }
 .btn-register:hover {
-  background-color: #118d70;
+  background-color: #ff2d68;
 }
 .draw-border:hover {
   color: #fff;
 }
 .draw-border:hover::before, .draw-border:hover::after {
-  /* border-color: #58afd1; */
-  border-color: rgb(0, 192, 144);
+  border-color: #58afd1;
+  /* border-color: rgb(0, 192, 144); */
   transition: border-color 0s, width 0.25s, height 0.25s;
   width: 100%;
   height: 100%;
@@ -301,6 +306,59 @@ html {
 }
 
 
+
+
+
+
+/* ========================================== */
+/* About Us */
+/* ========================================== */
+
+/* ========================================== */
+/* Contact Us */
+/* ========================================== */
+.about-manager {
+  display: flex;
+}
+.contact-info {
+  margin-left: 15px;
+}
+.manager-image img {
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  padding: 1px;
+}
+.about-manager .name {
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 5px;
+}
+.about-manager .designation {
+  color: #555;
+}
+.contact-info .email {
+  display: block;
+  text-decoration: underline;
+  margin-top: 30px;
+}
+.contact-info .mail-address {
+  display: block;
+  color: #222;
+}
+.contact-info .mail-address:hover {
+  color: #00c090;
+}
+.contact-area {
+  background-color: #ede3d7;
+  padding: 30px 0px;
+}
+.about-content {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 30px;
+  background-color: #292f6b;
+  color: #fff;
+}
 /*
 ffd99f
 theme color: #292f6b
